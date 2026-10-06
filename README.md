@@ -32,6 +32,8 @@ cd projeto-node
 npm init -y
 ```
 
+No arquivo `package.json`, substituir ` "type": "commonjs"` por ` "type": "module"`.
+
 ```bash
 npm run dev
 ```
