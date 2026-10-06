@@ -54,6 +54,10 @@ No arquivo `package.json`, substituir ` "type": "commonjs"` por ` "type": "modul
 node 01-index.js
 ```
 
+No VS Code, instalar a extensão `REST Client`:
+
+![Extensão REST Client](./img/restclient.png)
+
 ---
 
 ## Exercícios
