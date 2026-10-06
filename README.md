@@ -58,6 +58,15 @@ No VS Code, instalar a extensão `REST Client`:
 
 ![Extensão REST Client](./img/restclient.png)
 
+
+Criar os arquivos `02-index.js` e `02-index.http`.
+
+Conteúdo do arquivo `02-index.http`:
+
+```text
+GET http://localhost:3000
+```
+
 ---
 
 ## Exercícios

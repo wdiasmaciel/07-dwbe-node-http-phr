@@ -6,9 +6,9 @@ const servidor = http.createServer((req, res) => {
         "Content-Type": "text/plain"
     });
 
-    res.end("Olá! Servidor Node.js funcionando.");
+    res.end("Olá, Mundo! Servidor Node.js funcionando!");
 });
 
 servidor.listen(3000, () => {
-    console.log("Servidor executando na porta 3000");
+    console.log("Servidor executando na porta 3000.");
 });
