@@ -25,7 +25,7 @@ mkdir projeto-node
 ```
 
 ```bash
-cd react-aula
+cd projeto-node
 ```
 
 ```bash
