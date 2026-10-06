@@ -90,6 +90,52 @@ GET http://localhost:3000/contato
 ### Isto é um separador de requisições:
 GET http://localhost:3000/produtos
 ```
+
+Criar os arquivos `04-index.js` e `04-index.http`.
+
+Conteúdo do arquivo `04-index.http`:
+
+```text
+# Isto é um comentário.
+//Isto também é um comentário.
+
+// Variável:
+@host = http://localhost:3000
+
+### Isto é um separador de requisições:
+GET {{host}}/dados
+```
+
+Criar os arquivos `05-index.js` e `05-index.http`.
+
+Conteúdo do arquivo `05-index.http`:
+
+```text
+# Isto é um comentário.
+//Isto também é um comentário.
+
+// Variável:
+@host = http://localhost:3000
+
+### Isto é um separador de requisições:
+GET {{host}}/dados
+```
+
+Criar os arquivos `06-index.js` e `06-index.http`.
+
+Conteúdo do arquivo `06-index.http`:
+
+```text
+# Isto é um comentário.
+//Isto também é um comentário.
+
+// Variável:
+@host = http://localhost:3000
+
+### Isto é um separador de requisições:
+GET {{host}}/dados
+```
+
 ---
 
 ## Exercícios
