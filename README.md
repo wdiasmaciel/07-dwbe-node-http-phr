@@ -67,6 +67,29 @@ Conteúdo do arquivo `02-index.http`:
 GET http://localhost:3000
 ```
 
+Criar os arquivos `03-index.js` e `03-index.http`.
+
+Conteúdo do arquivo `03-index.http`:
+
+```text
+# Isto é um comentário.
+//Isto também é um comentário.
+
+### Isto é um separador de bloco:
+GET http://localhost:3000
+
+### Isto é um separador de bloco:
+GET http://localhost:3000/
+
+### Isto é um separador de bloco:
+GET http://localhost:3000/sobre
+
+### Isto é um separador de bloco:
+GET http://localhost:3000/contato
+
+### Isto é um separador de bloco:
+GET http://localhost:3000/produtos
+```
 ---
 
 ## Exercícios
