@@ -82,7 +82,7 @@ async function tratarRequisicao(req, res) {
 }
 
 const servidor = http.createServer(tratarRequisicao);
-const porta = process.env.PORT || 3000;
+const porta = 3000;
 
 servidor.listen(porta, () => {
     console.log(`Servidor iniciado na porta ${porta}.`);
