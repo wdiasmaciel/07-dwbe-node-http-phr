@@ -1,4 +1,5 @@
 import http from "http";
+import { readFile } from "node:fs/promises";
 
 const dados = [
     {
@@ -36,6 +37,7 @@ function gerarPaginaHtml(dados) {
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="./style/estilo.css">
                 <title>Dados</title>
             </head>
             <body>
@@ -56,6 +58,13 @@ function gerarPaginaHtml(dados) {
 }
 
 async function tratarRequisicao(req, res) {
+    if (req.url === "/style/estilo.css") {
+        const css = await readFile(new URL("./style/estilo.css", import.meta.url));
+        res.writeHead(200, { "Content-Type": "text/css; charset=utf-8" });
+        res.end(css);
+        return;
+    }
+
     if (req.url === "/" || req.url === "/dados") {
         res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
         res.end(gerarPaginaHtml(dados));
