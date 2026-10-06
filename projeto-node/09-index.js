@@ -59,6 +59,12 @@ function gerarPaginaHtml(dados) {
 
 async function tratarRequisicao(req, res) {
     if (req.url === "/style/estilo.css") {
+        /*
+         * import.meta.url é a URL absoluta do arquivo JavaScript que está sendo executado.
+         * new URL resolve ./style/estilo.css em relação à pasta de 09-index.js, e não à 
+         * pasta de onde o comando node foi executado. Isso ajuda o servidor a encontrar o 
+         * CSS mesmo quando você o inicia a partir de outro diretório.
+         */
         const css = await readFile(new URL("./style/estilo.css", import.meta.url));
         res.writeHead(200, { "Content-Type": "text/css; charset=utf-8" });
         res.end(css);
