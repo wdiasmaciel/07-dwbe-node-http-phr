@@ -136,8 +136,16 @@ Conteúdo do arquivo `06-index.http`:
 GET {{host}}/dados
 ```
 
+Criar os demais arquivos `#-index.js` e `#-index.http`.
+
 ---
 
 ## Exercícios
 
-1.
+Usando `Node.js` e o módulo `http`, escreva uma `API` que:
+
+1. Retorne a lista de produtos de uma loja. Teste a `API`, usando a extensão `REST Client` do `VS Code`. Também apresente uma página com os dados retornados. Aplique estilos CSS à página. A porta da aplicação deve ser armazenada numa variável de ambiente.
+
+2. Retorne a lista de pacotes viagem de uma agência de turismo. Teste a `API`, usando a extensão `REST Client` do `VS Code`. Também apresente uma página com os dados retornados. Aplique estilos CSS à página. A porta da aplicação deve ser armazenada numa variável de ambiente.
+
+3. Retorne a lista de eventos de um site de eventos. Teste a `API`, usando a extensão `REST Client` do `VS Code`. Também apresente uma página com os dados retornados. Aplique estilos CSS à página. A porta da aplicação deve ser armazenada numa variável de ambiente.
