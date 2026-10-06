@@ -1,0 +1,8 @@
+# Isto é um comentário.
+//Isto também é um comentário.
+
+// Variável:
+@host = http://localhost:3000
+
+### Isto é um separador de requisições:
+GET {{host}}/dados
