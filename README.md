@@ -51,7 +51,7 @@ No arquivo `package.json`, substituir ` "type": "commonjs"` por ` "type": "modul
 ```
 
 ```bash
-npm run dev
+node 01-index.js
 ```
 
 ---
