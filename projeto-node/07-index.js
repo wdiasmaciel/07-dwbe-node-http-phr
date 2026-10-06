@@ -2,7 +2,7 @@ import http from "http";
 
 const servidor = http.createServer((req, res) => {
 
-    if (req.url === "/dados") {
+    if (req.url === "/dados" || req.url === "/") {
 
         const dados = [
             {
@@ -53,7 +53,11 @@ const servidor = http.createServer((req, res) => {
                     </table>
                  </body>
                  </html>`);
+                return;
     }
+
+    res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+    res.end("Página não encontrada.");
 });
 
 servidor.listen(3000, () => {
