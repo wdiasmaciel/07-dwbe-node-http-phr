@@ -29,7 +29,7 @@ cd projeto-node
 ```
 
 ```bash
-npm init-y
+npm init -y
 ```
 
 ```bash
