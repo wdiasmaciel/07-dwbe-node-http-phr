@@ -75,19 +75,19 @@ Conteúdo do arquivo `03-index.http`:
 # Isto é um comentário.
 //Isto também é um comentário.
 
-### Isto é um separador de bloco:
+### Isto é um separador de requisições:
 GET http://localhost:3000
 
-### Isto é um separador de bloco:
+### Isto é um separador de requisições:
 GET http://localhost:3000/
 
-### Isto é um separador de bloco:
+### Isto é um separador de requisições:
 GET http://localhost:3000/sobre
 
-### Isto é um separador de bloco:
+### Isto é um separador de requisições:
 GET http://localhost:3000/contato
 
-### Isto é um separador de bloco:
+### Isto é um separador de requisições:
 GET http://localhost:3000/produtos
 ```
 ---
