@@ -21,7 +21,7 @@ npm -v
 ```
 
 ```bash
-npm create vite@latest
+mkdir projeto-node
 ```
 
 ```bash
