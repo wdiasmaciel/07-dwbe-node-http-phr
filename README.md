@@ -32,7 +32,23 @@ cd projeto-node
 npm init -y
 ```
 
-No arquivo `package.json`, substituir ` "type": "commonjs"` por ` "type": "module"`.
+No arquivo `package.json`, substituir ` "type": "commonjs"` por ` "type": "module"`:
+
+```text
+{
+  "name": "projeto-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
+```
 
 ```bash
 npm run dev
